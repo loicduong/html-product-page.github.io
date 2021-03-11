@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product</title>
+  </head>
+  <body>
+    <div class="product">
+      <div class="product__header">
+        <div class="product__menu">
+          <i class="fa fa-align-center product__menu-icon">
+            <span class="product__menu-text">Menu</span>
+          </i>
+        </div>
+        <h1 class="product__heading">Shoes</h1>
+        <ul class="tool">
+          <li class="tool__item"><i class="far fa-heart"></i></li>
+          <li class="tool__item"><i class="fas fa-search"></i></li>
+          <li class="tool__item"><i class="fas fa-shopping-bag"></i></li>
+        </ul>
+      </div>
+      <div class="product__nav">
+        <ul class="category">
+          <li class="category__item">
+            <a href="javascript:void(0)" class="category__link">Brands</a>
+          </li>
+          <li class="category__item">
+            <a href="javascript:void(0)" class="category__link">Footwear</a>
+          </li>
+          <li class="category__item">
+            <a href="javascript:void(0)" class="category__link">Clothing</a>
+          </li>
+        </ul>
+        <div class="social">
+          <span class="social__text">Follow us</span>
+          <ul class="social__share">
+            <li class="social__share-item">
+              <a href="https://www.facebook.com/" class="social__share-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" class="social__share-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="product__slider">
+        <ul class="slider">
+          <li class="slider__item">
+            <h2 class="slider__title">Congo african jogger</h2>
+            <div class="slider__image">
+              <img src="imgs/congo.png" alt="Congo african jogger" />
+              <div class="slider__price">$79.00</div>
+            </div>
+            <button class="btn btn--secondary">Add to cart</button>
+          </li>
+          <li class="slider__item">
+            <h2 class="slider__title">Sneaker</h2>
+            <div class="slider__image">
+              <img src="imgs/sneaker.png" alt="sneaker" />
+              <div class="slider__price">$154.00</div>
+            </div>
+            <button class="btn btn--secondary">Add to cart</button>
+          </li>
+          <li class="slider__item">
+            <h2 class="slider__title">Mono</h2>
+            <div class="slider__image">
+              <img src="imgs/mono.png" alt="mono" />
+              <div class="slider__price">$55.00</div>
+            </div>
+            <button class="btn btn--secondary">Add to cart</button>
+          </li>
+          <div style="text-align: center">
+            <span class="slider__dot" onclick="currentSlider(1)"></span>
+            <span class="slider__dot" onclick="currentSlider(2)"></span>
+            <span class="slider__dot" onclick="currentSlider(3)"></span>
+          </div>
+        </ul>
+
+        <ul class="slider__arrow">
+          <li class="slider__arrow-item" onclick="plusSlider(1)">
+            <span>Next</span>
+            <span>&rarr;</span>
+          </li>
+          <li class="slider__arrow-item" onclick="plusSlider(-1)">
+            <span>Prev</span>
+            <span>&larr;</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="main.js" defer></script>
+  </body>
+</html>
