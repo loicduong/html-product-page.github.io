@@ -1,2 +1,2 @@
-# Link
-https://loicduong.github.io/product-page.github.io/
+# html-product-page
+A beautiful HTML page displaying shoe products.
